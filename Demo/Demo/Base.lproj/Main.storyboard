@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rTJ-qd-hKg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+    </dependencies>
+    <scenes>
+        <!--AKSwitchView-->
+        <scene sceneID="Pqw-AY-jUe">
+            <objects>
+                <viewController id="UDg-xU-6Sl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gFg-Zb-bbD"/>
+                        <viewControllerLayoutGuide type="bottom" id="35A-lt-Huq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5MD-GA-AfI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extended UIView class" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIG-Ia-WSq">
+                                <rect key="frame" x="20" y="96" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg6-aD-767">
+                                <rect key="frame" x="20" y="214" width="560" height="26"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbH-4X-kdi">
+                                <rect key="frame" x="200" y="248" width="200" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2Zm-Js-LWv"/>
+                                    <constraint firstAttribute="height" constant="1" id="ffc-ip-aUS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOL-0T-vLb">
+                                <rect key="frame" x="244" y="281" width="112" height="30"/>
+                                <state key="normal" title="With constraints"/>
+                                <connections>
+                                    <segue destination="BfQ-M6-ucv" kind="show" identifier="" id="PEW-eS-4FZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifI-KL-ajK">
+                                <rect key="frame" x="233" y="343" width="135" height="30"/>
+                                <state key="normal" title="Without constraints"/>
+                                <connections>
+                                    <segue destination="WmM-ni-Mmu" kind="show" id="hTy-po-VSy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URX-UJ-SHP">
+                                <rect key="frame" x="240" y="405" width="120" height="30"/>
+                                <state key="normal" title="Programmatically"/>
+                                <connections>
+                                    <segue destination="LqS-sk-TCk" kind="show" id="DFu-12-QQC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uOL-0T-vLb" firstAttribute="top" secondItem="QbH-4X-kdi" secondAttribute="bottom" constant="32" id="0Xi-t5-7UA"/>
+                            <constraint firstItem="URX-UJ-SHP" firstAttribute="top" secondItem="ifI-KL-ajK" secondAttribute="bottom" constant="32" id="7ke-eP-9dJ"/>
+                            <constraint firstItem="uOL-0T-vLb" firstAttribute="centerX" secondItem="5MD-GA-AfI" secondAttribute="centerX" id="BEZ-rx-UqB"/>
+                            <constraint firstItem="QbH-4X-kdi" firstAttribute="centerX" secondItem="5MD-GA-AfI" secondAttribute="centerX" id="BSS-bS-pO1"/>
+                            <constraint firstItem="ifI-KL-ajK" firstAttribute="top" secondItem="uOL-0T-vLb" secondAttribute="bottom" constant="32" id="MXG-Mx-hCr"/>
+                            <constraint firstItem="cg6-aD-767" firstAttribute="leading" secondItem="5MD-GA-AfI" secondAttribute="leadingMargin" id="OsC-AQ-Vsw"/>
+                            <constraint firstItem="lIG-Ia-WSq" firstAttribute="top" secondItem="gFg-Zb-bbD" secondAttribute="bottom" constant="32" id="SN9-Xc-Axr"/>
+                            <constraint firstItem="QbH-4X-kdi" firstAttribute="top" secondItem="cg6-aD-767" secondAttribute="bottom" constant="8" id="Vcj-W2-APg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lIG-Ia-WSq" secondAttribute="trailing" id="ZS9-T1-5Ma"/>
+                            <constraint firstItem="ifI-KL-ajK" firstAttribute="centerX" secondItem="5MD-GA-AfI" secondAttribute="centerX" id="auQ-7P-rjV"/>
+                            <constraint firstItem="URX-UJ-SHP" firstAttribute="centerX" secondItem="5MD-GA-AfI" secondAttribute="centerX" id="f7r-4b-Lfx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cg6-aD-767" secondAttribute="trailing" id="g6A-Lz-Dxg"/>
+                            <constraint firstItem="cg6-aD-767" firstAttribute="top" secondItem="gFg-Zb-bbD" secondAttribute="bottom" constant="150" id="nbD-h2-KWs"/>
+                            <constraint firstItem="lIG-Ia-WSq" firstAttribute="leading" secondItem="5MD-GA-AfI" secondAttribute="leadingMargin" id="vQg-fW-ObG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AKSwitchView" id="nRS-yH-o6m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nSQ-cX-1gC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="595"/>
+        </scene>
+        <!--With constraints-->
+        <scene sceneID="liq-bl-4mF">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="BfQ-M6-ucv" customClass="Demo1ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUH-YK-jPv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZNM-Y6-Z4q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yTB-i6-SMG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3W-xD-6H3" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="ZHF-Il-rya"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-9O-4pq" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="80" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="soh-I4-uas"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VxI-wI-tFA" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="96" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Ixn-dT-HXo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O3W-xD-6H3" firstAttribute="leading" secondItem="yTB-i6-SMG" secondAttribute="leading" id="0bE-WK-GVh"/>
+                            <constraint firstItem="VxI-wI-tFA" firstAttribute="leading" secondItem="yTB-i6-SMG" secondAttribute="leading" id="H1Z-mH-6Is"/>
+                            <constraint firstItem="O3W-xD-6H3" firstAttribute="top" secondItem="hUH-YK-jPv" secondAttribute="bottom" id="MAV-hd-Q0c"/>
+                            <constraint firstItem="ZnS-9O-4pq" firstAttribute="leading" secondItem="yTB-i6-SMG" secondAttribute="leading" id="UH1-DP-2r0"/>
+                            <constraint firstAttribute="trailing" secondItem="VxI-wI-tFA" secondAttribute="trailing" id="eTv-o6-4yl"/>
+                            <constraint firstAttribute="trailing" secondItem="ZnS-9O-4pq" secondAttribute="trailing" id="iBS-HO-db5"/>
+                            <constraint firstAttribute="trailing" secondItem="O3W-xD-6H3" secondAttribute="trailing" id="jBP-5e-LKf"/>
+                            <constraint firstItem="VxI-wI-tFA" firstAttribute="top" secondItem="ZnS-9O-4pq" secondAttribute="bottom" constant="16" id="nAR-f5-cuf"/>
+                            <constraint firstItem="ZnS-9O-4pq" firstAttribute="top" secondItem="O3W-xD-6H3" secondAttribute="bottom" constant="16" id="txt-pV-HEN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="With constraints" id="JZT-vy-6nm">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Remove" id="lzV-UA-ZEb">
+                                <connections>
+                                    <action selector="removeAction:" destination="BfQ-M6-ucv" id="Jic-tF-H2B"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Show" id="NMv-0K-de5">
+                                <connections>
+                                    <action selector="showAction:" destination="BfQ-M6-ucv" id="JHd-H4-zrX"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="switchView1" destination="O3W-xD-6H3" id="3uh-py-w4m"/>
+                        <outlet property="switchView2" destination="ZnS-9O-4pq" id="jvT-33-Atk"/>
+                        <outlet property="switchView3" destination="VxI-wI-tFA" id="Dgc-VO-xuC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pgu-uT-dwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="595"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mKl-07-gE0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rTJ-qd-hKg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bxk-DG-wex">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UDg-xU-6Sl" kind="relationship" relationship="rootViewController" id="i01-uX-vBN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtY-oS-HJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="595"/>
+        </scene>
+        <!--Without constraints-->
+        <scene sceneID="vnl-ub-O44">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="WmM-ni-Mmu" customClass="Demo2ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WgO-U6-AkG"/>
+                        <viewControllerLayoutGuide type="bottom" id="wyh-OX-c0m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwH-XJ-0xc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqS-9C-ZYn" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="80" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRL-7r-Ugd" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="150" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-p7-ae7" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="250" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Without constraints" id="Mue-R3-PPS">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Remove" id="fiL-Bb-qIj">
+                                <connections>
+                                    <action selector="removeAction:" destination="WmM-ni-Mmu" id="8jF-ki-r0w"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Show" id="rGe-g8-rCe">
+                                <connections>
+                                    <action selector="showAction:" destination="WmM-ni-Mmu" id="ZV4-vD-MgP"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="switchView1" destination="dqS-9C-ZYn" id="oQn-sk-iFJ"/>
+                        <outlet property="switchView2" destination="MRL-7r-Ugd" id="9hn-WY-dW2"/>
+                        <outlet property="switchView3" destination="a9f-p7-ae7" id="zN1-ia-yCh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wrx-MG-B5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="1378"/>
+        </scene>
+        <!--Programmatically-->
+        <scene sceneID="1NZ-C1-XwJ">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="LqS-sk-TCk" customClass="Demo3ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rhC-0g-5Jc"/>
+                        <viewControllerLayoutGuide type="bottom" id="K6u-V5-Caw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CEL-BX-U6a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-nH-2CT" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="80" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A3W-0z-gd1" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="150" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fom-LK-wgF" customClass="AKSwitchView" customModule="Demo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="250" width="600" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Programmatically" id="Ybh-oj-mbV">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Remove" id="SNe-Lc-37c">
+                                <connections>
+                                    <action selector="removeAction:" destination="LqS-sk-TCk" id="9cO-uj-laZ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Show" id="yYz-Cr-FVV">
+                                <connections>
+                                    <action selector="showAction:" destination="LqS-sk-TCk" id="W7X-TX-Lf8"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="switchView1" destination="wHp-nH-2CT" id="dH9-FC-7T3"/>
+                        <outlet property="switchView2" destination="A3W-0z-gd1" id="okn-ld-SQD"/>
+                        <outlet property="switchView3" destination="fom-LK-wgF" id="LKY-kw-oC6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2z-Ch-qsj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="2113"/>
+        </scene>
+    </scenes>
+</document>
