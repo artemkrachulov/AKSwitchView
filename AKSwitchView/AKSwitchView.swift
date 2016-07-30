@@ -12,15 +12,16 @@ import UIKit
 /// UIView subclass with fixed zero height if view not have any subviews. After adding subviews class
 /// will expand accordingly inner subview height.
 /// After adding AKSwitchView to view controller with constraints, set zero height constraint to current AKSwitchView.
-class AKSwitchView: UIView {
+
+public class AKSwitchView: UIView {
   
   //  MARK: - Properties
   
-  private var constraintHeight = false  
+  private var constraintHeight = false
   
   //  MARK: - Methods
   
-  override func addSubview(view: UIView) {
+  public func addInnerView(view: UIView) {
     
     // Remove all inner subviews.
     removeSubview()
@@ -30,9 +31,8 @@ class AKSwitchView: UIView {
       constraintHeight = true
       removeConstraint(heightConstraint)
     }
-    super.addSubview(view)
-    
-    if constraintHeight {
+    addSubview(view)
+    if constraintHeight || !translatesAutoresizingMaskIntoConstraints {
       
       view.translatesAutoresizingMaskIntoConstraints = false
       
@@ -50,7 +50,7 @@ class AKSwitchView: UIView {
     }
   }
   
-  func removeSubview() {
+  public func removeSubview() {
     
     for subview in subviews {
       subview.removeFromSuperview()
